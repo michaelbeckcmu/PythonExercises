@@ -1,38 +1,24 @@
-print ("2+3")
-print ("= " + str(2+3))
+numbers = list(range(1,6))
+print(numbers)
 
-print ("3-2")
-print ("= " + str(3-2))
+even_numbers = list(range(2,11,2))
+print(even_numbers)
 
-print ("2*3")
-print ("= " + str(2*3))
+squares = []
+for value in range(1,11):
+	squares.append(value**2)
 
-print ("3/2")
-print ("= " + str(3/2))
+print(squares)
 
-print ("3^2")
-print ("= " + str(3**2))
+digits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 
-print ("3^3")
-print ("= " + str(3**3))
+print(digits)
 
-print ("10^6")
-print ("= " + str(10**6))
+print("minimum digit = " + str(min(digits)))
 
-print ("2 + 3*4")
-print ("= " + str(2+3*4))
+print("maximum digit = " + str(max(digits)))
 
-print ("(2+3)*4")
-print ("= " + str((2+3)*4))
+print("sum of digits = " + str(sum(digits)))
 
-print ("0.2 + 0.2")
-print ("= " + str(0.2+0.2))
-
-print ("2 * 0.2")
-print ("= " + str(2*0.2))
-
-print ("0.2 + 0.1")
-print ("= " + str(0.2+0.1))
-
-print ("3 * 0.1")
-print ("= " + str(3*0.1))
+sqaures = [value**2 for value in range(1,11)]
+print(squares)
