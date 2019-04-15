@@ -120,6 +120,23 @@ def change_fleet_direction(ai_settings, aliens):
 	ai_settings.fleet_direction *= -1
 
 
+def update_aliens(ai_settings, screen, aliens, ship, bullets):
+	aliens.empty()
+	bullets.empty()
+	ship.reset()
+
+	create_fleet(ai_settings, screen, aliens, ship)
+
+
+def alien_landed(screen, aliens):
+
+	alien_landed = False
+
+	for alien in aliens.sprites():
+		if alien.rect.y >= (screen.get_height() - alien.rect.height):
+			alien_landed = True
+
+	return alien_landed
 
 def update_screen(ai_settings, screen, ship, bullets, aliens):
 	"""Update images on the screen and flip to the new screen."""

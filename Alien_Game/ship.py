@@ -27,6 +27,16 @@ class Ship():
 		self.speedup_flag = False
 
 
+	def reset(self):
+		# Start each new ship at the bottom center of the screen.
+		self.rect.centerx = self.screen_rect.centerx
+		self.rect.bottom = self.screen_rect.bottom
+
+		# Store a decimal value for the ship's center.
+		self.center = float(self.rect.centerx)
+
+
+
 	def update(self):
 
 
