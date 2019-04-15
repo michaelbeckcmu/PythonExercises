@@ -26,8 +26,6 @@ class Ship():
 		self.speedup_counter = 0
 		self.speedup_flag = False
 
-		self.error_counter = 0
-
 
 	def update(self):
 
@@ -40,10 +38,6 @@ class Ship():
 			(self.settings.ship_speed_factor)
 
 		self.rect.centerx = self.center
-
-		if self.speedup_flag == False:
-			print(self.error_counter)
-			self.error_counter += 1
 
 		if self.speedup_flag:
 			self.speedup_counter += 1
